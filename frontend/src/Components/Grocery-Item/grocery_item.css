@@ -1,0 +1,23 @@
+.editable {
+    background-color: rgba(224, 252, 198, 0.4);
+}
+.editable:hover {
+    background-color: rgba(224, 252, 198, 0.6) !important;
+}
+
+.icon {
+    border: none;
+    background-color: transparent;
+    margin: none;
+    padding: none;
+    color: gray;
+}
+
+.addNew {
+background-color: rgb(135, 240, 135);
+}
+
+
+.clickable:hover {
+    color: black
+}
