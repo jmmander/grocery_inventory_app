@@ -15,7 +15,7 @@
   float: right;
   display: flex;
   color: white;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .nav-button:hover {
@@ -42,5 +42,8 @@ font-size: 2em !important;
 font-weight: bold;
 }
 
+.view-button {
+ font-weight: 500;
+}
 
 

@@ -18,7 +18,7 @@ class Grocery_Item(models.Model):
         ('Full', 'Full price'),
     ]
 
-    name = models.CharField(max_length=120)
+    name = models.CharField(max_length=120, unique=True)
     quantity = models.IntegerField(default=True)
     location = models.CharField(choices=location_choices, max_length=7)
     taxable = models.BooleanField(default=True)

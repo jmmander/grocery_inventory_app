@@ -4,15 +4,9 @@
     <list default="true" id="e920e30a-1838-48c6-9fe2-7474e3c3b12c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/grocery/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/grocery/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/grocery/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/grocery/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Editable-Item/editable-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Editable-Item/editable-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Employee-Viewer/employee_viewer.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Employee-Viewer/employee_viewer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Employee-Viewer/employee_viewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Employee-Viewer/employee_viewer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Grocery-Item/grocery_item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Grocery-Item/grocery_item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Login/login.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/grocery/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#100#128#0" expanded="true" />
               </folding>
@@ -139,9 +133,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1156" />
-    <option name="y" value="26" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1382" />
+    <option name="y" value="67" />
     <option name="width" value="2040" />
     <option name="height" value="1761" />
   </component>
@@ -313,8 +307,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/grocery/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#100#128#0" expanded="true" />
           </folding>

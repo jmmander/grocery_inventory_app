@@ -34,9 +34,9 @@ function App() {
       <Navbar className="nav">
       <Navbar.Brand>Inventory Manager</Navbar.Brand>
       <div className='button-container'>
-      <button className="nav-button logout" onClick={() => {setLoggedIn(false)}} >Logout</button> 
-      <button className="nav-button" onClick={() => setEmployeeView(true)}>Employee</button>
-      <button className="nav-button" onClick={() => setEmployeeView(false)}>Inventory</button>
+      <button className="nav-button logout" onClick={() => {setLoggedIn(false); setEmployeeView(false)}} >Logout</button> 
+      <button className="nav-button view-button" onClick={() => setEmployeeView(true)}>Add Employee</button>
+      <button className="nav-button view-button" onClick={() => setEmployeeView(false)}>View Inventory</button>
       </div>
       </Navbar>
       }{
