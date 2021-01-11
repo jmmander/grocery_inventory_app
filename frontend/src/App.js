@@ -6,6 +6,7 @@ import Employee_Viewer from './Components/Employee-Viewer/employee_viewer'
 import React, {useState } from "react";
 import axios from 'axios';
 import { Navbar} from 'react-bootstrap';
+import trolly from './Images/trolly.png'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       {
       loggedIn &&
       <Navbar className="nav">
+        <img className="logo" src={trolly} alt="logo"></img>
       <Navbar.Brand>Inventory Manager</Navbar.Brand>
       <div className='button-container'>
       <button className="nav-button logout" onClick={() => {setLoggedIn(false); setEmployeeView(false)}} >Logout</button> 

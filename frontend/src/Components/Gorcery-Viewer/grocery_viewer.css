@@ -10,3 +10,11 @@
     width: 100%;
     padding: 15px 0px;
 }
+
+.addButton {
+    background-color: teal !important ;
+    border: black !important;
+}
+.addButton:hover {
+    background-color: rgb(56, 87, 100) !important;
+}
