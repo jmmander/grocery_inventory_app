@@ -1,4 +1,5 @@
 #https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
+#https://docs.python.org/2/library/hashlib.html
 
 from django.db import models
 import hashlib

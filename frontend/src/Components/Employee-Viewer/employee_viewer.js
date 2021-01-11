@@ -1,5 +1,5 @@
 import React, { useState,  }  from "react";
-import {Row, Col, Form, Button} from 'react-bootstrap';
+import {Row, Form, Button} from 'react-bootstrap';
 import axios from 'axios';
 import './employee_viewer.css'
 
@@ -43,11 +43,6 @@ import './employee_viewer.css'
         }
 
     
-    const changeView = () => {
-        props.setEmployeeView(false);
-        setError("");
-        setConfirmation("");
-    }
 
     return (
    

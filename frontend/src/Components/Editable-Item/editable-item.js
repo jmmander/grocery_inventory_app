@@ -45,11 +45,11 @@ function Editable_Item(props) {
     //checks that input values are valid
     const validateInputs = () => {
         let valid = true;
-        if (updatedItem.name.length == 0 || updatedItem.name.length > 120) {
+        if (updatedItem.name.length === 0 || updatedItem.name.length > 120) {
             valid = false;
             alert("Name must have between 1 and 120 characters");
         }
-        if (updatedItem.quantity < 0 || updatedItem.quantity == "" ) {
+        if (updatedItem.quantity < 0 || updatedItem.quantity === "" ) {
             valid = false;
             alert("Quantity must be number greater than 0");
         }

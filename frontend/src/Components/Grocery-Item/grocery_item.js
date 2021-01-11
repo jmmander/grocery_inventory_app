@@ -1,4 +1,4 @@
-import React, { useState, useRef }  from "react";
+import React, { useState }  from "react";
 import './grocery_item.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit, faTrashAlt, faCheckSquare, faSquare } from '@fortawesome/free-solid-svg-icons';

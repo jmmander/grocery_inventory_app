@@ -8,6 +8,7 @@ function Login(props) {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    
 
     
     //sends login data to App components userlogin fuction
@@ -18,7 +19,7 @@ function Login(props) {
 
     return (
       <div className="loginContainer">
-      <div class="heading"> <h3>Login</h3> </div>
+      <div className="heading"> <h3>Login</h3> </div>
       <Form onSubmit={handleSubmit}>
       <Form.Group controlId="Email">
         <Form.Label>Email</Form.Label>
@@ -26,10 +27,10 @@ function Login(props) {
       </Form.Group>
       <Form.Group controlId="Password">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" value={password}  minLength="5" maxLength="20" onChange={(e) => setPassword(e.target.value)}/>
+        <Form.Control type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
       </Form.Group>
       { props.showError &&
-      <p className="error">Invalid username or password. Please try again.</p>
+      <p className="error">{props.errorMsg}</p>
       }
       <Button type="submit">
         Submit

@@ -13,6 +13,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [showError, setShowError] = useState(false);
   const [employeeView, setEmployeeView] = useState(false)
+  const [errorMsg, setErrorMsg] = useState("")
 
   //checks user credentials with database
   const userLogin = (email, pw) => {
@@ -23,8 +24,13 @@ function App() {
           setShowError(false);
       }})
       .catch(error => {
-        setShowError(true)
-      })
+        if (!error.response) {
+          setErrorMsg('Error: Network Error');
+          setShowError(true)
+        } else {
+            setErrorMsg("Invalid username or password");
+            setShowError(true)
+      }})
   }
 
 
@@ -43,7 +49,7 @@ function App() {
       </Navbar>
       }{
       !loggedIn && 
-      <Login userLogin={userLogin} showError={showError}> </Login>
+      <Login userLogin={userLogin} showError={showError} errorMsg={errorMsg}> </Login>
       }{
       loggedIn && employeeView &&
       <Employee_Viewer ></Employee_Viewer>
