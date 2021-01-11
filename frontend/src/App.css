@@ -1,8 +1,6 @@
 .App {
   text-align: center;
 
-  
-  
 }
 
 .heading {
@@ -10,9 +8,38 @@
 }
 
 
-.logout {
+.nav-button {
+  margin-right: 0;
+  background-color: transparent ;
+  border: none;
   float: right;
-  margin-right: 30px;
+  display: flex;
+  color: white;
+  margin-left: 10px;
+}
+
+.nav-button:hover {
+  color: black
+  
+}
+
+.logout {
+  margin-left: 15px;
+  font-size: 0.7em;
+  vertical-align: top;
+}
+
+.nav {
+background-color: teal;
+color: white;
+justify-content: space-between !important;
+margin-bottom: 10px;
+
+}
+
+.navbar-brand {
+font-size: 2em !important;
+font-weight: bold;
 }
 
 

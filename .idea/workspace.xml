@@ -4,6 +4,15 @@
     <list default="true" id="e920e30a-1838-48c6-9fe2-7474e3c3b12c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/grocery/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/grocery/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/grocery/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/grocery/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Editable-Item/editable-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Editable-Item/editable-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Employee-Viewer/employee_viewer.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Employee-Viewer/employee_viewer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Employee-Viewer/employee_viewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Employee-Viewer/employee_viewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Grocery-Item/grocery_item.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Grocery-Item/grocery_item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Login/login.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +51,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/grocery/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+            <state relative-caret-position="615">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="e#100#128#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/grocery/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+            <state relative-caret-position="285">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding>
                 <element signature="e#100#135#0" expanded="true" />
               </folding>
@@ -127,10 +139,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1716" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1156" />
     <option name="y" value="26" />
-    <option name="width" value="1480" />
+    <option name="width" value="2040" />
     <option name="height" value="1761" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -200,11 +212,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1716" y="26" width="1480" height="1761" extended-state="0" />
+    <frame x="1156" y="26" width="2040" height="1761" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20630568" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1490837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -266,9 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/grocery/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/backend/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -289,10 +298,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/grocery/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/grocery/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding>
             <element signature="e#100#135#0" expanded="true" />
           </folding>
@@ -301,8 +313,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/grocery/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+        <state relative-caret-position="615">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#100#128#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

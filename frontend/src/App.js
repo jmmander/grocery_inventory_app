@@ -5,12 +5,13 @@ import Login from './Components/Login/login'
 import Employee_Viewer from './Components/Employee-Viewer/employee_viewer'
 import React, {useState } from "react";
 import axios from 'axios';
-import {Button} from 'react-bootstrap';
+import { Navbar} from 'react-bootstrap';
 
 function App() {
 
   const [loggedIn, setLoggedIn] = useState(false);
   const [showError, setShowError] = useState(false);
+  const [employeeView, setEmployeeView] = useState(false)
 
   //checks user credentials with database
   const userLogin = (email, pw) => {
@@ -23,27 +24,31 @@ function App() {
       .catch(error => {
         setShowError(true)
       })
-    
- 
   }
 
-  const logout = () => {
-    setLoggedIn(false)
-  }
 
   return (
     <div className="App">
-      <h1>Inventory</h1>
-      {!loggedIn ? 
-      <Login userLogin={userLogin} showError={showError}> </Login>
-      :
-      <div>
-      <Button className="logout" onClick={logout} >Logout</Button>
-      <Employee_Viewer></Employee_Viewer>
-      <Grocery_Viewer></Grocery_Viewer>
+      {
+      loggedIn &&
+      <Navbar className="nav">
+      <Navbar.Brand>Inventory Manager</Navbar.Brand>
+      <div className='button-container'>
+      <button className="nav-button logout" onClick={() => {setLoggedIn(false)}} >Logout</button> 
+      <button className="nav-button" onClick={() => setEmployeeView(true)}>Employee</button>
+      <button className="nav-button" onClick={() => setEmployeeView(false)}>Inventory</button>
       </div>
+      </Navbar>
+      }{
+      !loggedIn && 
+      <Login userLogin={userLogin} showError={showError}> </Login>
+      }{
+      loggedIn && employeeView &&
+      <Employee_Viewer ></Employee_Viewer>
+      }{
+        loggedIn && !employeeView &&
+      <Grocery_Viewer></Grocery_Viewer>
       }
-      
     </div>
 
   )

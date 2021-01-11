@@ -4,9 +4,8 @@ import axios from 'axios';
 import './employee_viewer.css'
 
 
- function Employee_Viewer() {
+ function Employee_Viewer(props) {
 
-    const [employeeView, setEmployeeView] = useState(false)
     const [employee, setEmployee] = useState({
         email: "",
         first_name: "",
@@ -45,17 +44,16 @@ import './employee_viewer.css'
 
     
     const changeView = () => {
-        setEmployeeView(!employeeView);
+        props.setEmployeeView(false);
         setError("");
         setConfirmation("");
     }
 
     return (
-    <>
-        {employeeView ?  
-        <>
-        <div className="button-container"><Button className="emp-button" onClick={changeView}>Hide form</Button></div>
+   
+
         <div className="emp-form">
+          <h4> Add new employee </h4>
         <Form onSubmit={addEmployee}>
         <Form.Group as={Row}  controlId="Email">
           <Form.Label>Email</Form.Label>
@@ -80,12 +78,7 @@ import './employee_viewer.css'
         <p className="confirmation">{confirmation}</p>
         </Form>
         </div>
-        </>
-        :
-        <div className="button-container"><Button className="emp-button" onClick={changeView}>Add Employee</Button></div>
-    }
 
-    </>
     )
  }
 

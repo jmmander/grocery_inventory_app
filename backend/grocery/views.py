@@ -3,8 +3,8 @@
 from rest_framework import viewsets
 from .serializers import GroceryItemSerializer, EmployeeSerializer
 from .models import Grocery_Item, Employee
-from django.http import JsonResponse, HttpResponse
-
+from django.http import HttpResponse
+import hashlib
 
 
 class GroceryItemView(viewsets.ModelViewSet):
@@ -16,15 +16,16 @@ class EmployeeView(viewsets.ModelViewSet):
   serializer_class = EmployeeSerializer
   queryset = Employee.objects.all()
 
+
 def EmpAuth(request):
   if request.method == 'GET':
     email = request.GET['email']
     password= request.GET['pw']
-    password = hash(password)
+    password = hashlib.md5(password.encode()).hexdigest()
     employee = Employee.objects.all().filter(email=email, password=password)
     serializer = EmployeeSerializer(employee, many=True)
     emp_data = serializer.data
     if emp_data == []:
       return HttpResponse(status=403)
     return HttpResponse(status=200)
-300
+

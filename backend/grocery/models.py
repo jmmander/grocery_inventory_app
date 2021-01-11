@@ -1,6 +1,7 @@
 #https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
 
 from django.db import models
+import hashlib
 
 
 # Create your models here.
@@ -35,5 +36,6 @@ class Employee(models.Model):
     password = models.CharField(max_length=20)
 
     def save(self, *args, **kwargs):
-        self.password = hash(self.password)
+        self.password = hashlib.md5(self.password.encode()).hexdigest()
         return super().save(*args, **kwargs)
+

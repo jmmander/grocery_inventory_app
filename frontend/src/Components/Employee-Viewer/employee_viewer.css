@@ -1,13 +1,9 @@
-.button-container {
-    padding-bottom: 15px;
-    width: 100%;
- 
-   
-}
+
 
 .emp-button {
 float: left;
 margin-left: 10px;
+font-size: 0.6em !important;
 
 }
 
@@ -15,7 +11,8 @@ margin-left: 10px;
     display: block;
     max-width: 500px;
     margin: 0 auto;
-    border: black 1px solid;
-    padding:10px;
+    margin-top: 15px;
+
+
     
 }

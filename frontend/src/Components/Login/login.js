@@ -1,8 +1,7 @@
 //https://react-bootstrap.github.io/components/forms/
 
-
 import React, { useState } from "react";
-import { Form, Button} from 'react-bootstrap';
+import { Button, Form} from 'react-bootstrap';
 import './login.css'
 
 function Login(props) {
@@ -18,7 +17,8 @@ function Login(props) {
     }
 
     return (
-
+      <div className="loginContainer">
+      <div class="heading"> <h3>Login</h3> </div>
       <Form onSubmit={handleSubmit}>
       <Form.Group controlId="Email">
         <Form.Label>Email</Form.Label>
@@ -35,6 +35,7 @@ function Login(props) {
         Submit
       </Button>
       </Form>
+      </div>
     
     )
 }
