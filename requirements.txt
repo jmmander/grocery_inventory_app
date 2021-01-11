@@ -1,4 +1,4 @@
-Python3
+python3.7.3
 Django==3.1.5
 djangorestframework==3.12.2
 
