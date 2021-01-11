@@ -1,6 +1,6 @@
 import React, { useState, useRef }  from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit, faCheckSquare, } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare, faWindowClose, } from '@fortawesome/free-solid-svg-icons';
 import useOutsideClick from '../../Utils/useOutsideClick';
 
 function Editable_Item(props) {
@@ -22,8 +22,7 @@ function Editable_Item(props) {
           handleSave();
         }
         if (e.key === 'Escape') {
-            props.refreshList();
-            props.setEditView(false);
+            cancelEdit();
         }
         };
 
@@ -56,17 +55,24 @@ function Editable_Item(props) {
         return valid 
     };
 
-        //detects click outside of editing item and saves
-        useOutsideClick(ref, () => {
-            handleSave()
-          });
+    //detects click outside of editing item and saves
+    useOutsideClick(ref, () => {
+        handleSave()
+        });
+    
+    //cancels any unsaved changes to editable item
+    const cancelEdit = () => {
+        props.refreshList();
+        props.editView(false);
+    }
+
     
 
 
 return (
     <tr className="editable" ref={ref}>
     <td>
-        <button className="icon" ><FontAwesomeIcon icon={faEdit} /></button>
+        <button className="icon" ><FontAwesomeIcon icon={faWindowClose} onClick={cancelEdit}/></button>
     </td>
     <td className='id-container '>
         {props.id}
